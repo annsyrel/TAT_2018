@@ -1,0 +1,7 @@
+C:\Users\Ann\source\repos\DEV-1\DEV-1\bin\Debug\DEV-1.exe.config
+C:\Users\Ann\source\repos\DEV-1\DEV-1\bin\Debug\DEV-1.exe
+C:\Users\Ann\source\repos\DEV-1\DEV-1\bin\Debug\DEV-1.pdb
+C:\Users\Ann\source\repos\DEV-1\DEV-1\obj\Debug\DEV-1.csprojResolveAssemblyReference.cache
+C:\Users\Ann\source\repos\DEV-1\DEV-1\obj\Debug\DEV-1.csproj.CoreCompileInputs.cache
+C:\Users\Ann\source\repos\DEV-1\DEV-1\obj\Debug\DEV-1.exe
+C:\Users\Ann\source\repos\DEV-1\DEV-1\obj\Debug\DEV-1.pdb
