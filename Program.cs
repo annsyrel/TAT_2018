@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace test
 {
@@ -13,29 +11,20 @@ namespace test
             if (args.Length == 0)
             {
                 Console.WriteLine("you need to pass input param!");
-                Console.ReadKey();
-
-                return;
+                Console.ReadLine();
             }
-
-
 
             string s = args[0];
             StringBuilder newline = new StringBuilder();
 
-            for (int i = 0; i < s.Length; i++)
+            for (int i = 0; i < s.Length; i+=2)
             {
-                if (i % 2 == 0)
-                {
                     newline.Append(s[i]);
-
-
-                }
-
-
             }
+
             Console.Write(newline);
-            Console.ReadKey();
+            Console.ReadLine();
+
         }
     }
 }
