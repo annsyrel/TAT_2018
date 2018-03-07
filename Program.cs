@@ -1,25 +1,32 @@
 ﻿using System;
 
-namespace DEV3
+namespace ConvertDecimalToAnyRadix
 {
-    class DEV3
+    class DEV3 
     {
-         static void Main(string[] args)
+        static void Main(string[] args)
         {
-            int Number, Redix;
+            int NumberForConvertation, RadixOfConvertation;
+            var a = new ConvertFrom10ToAnyRadix();
             try
             {
                 if (args.Length != 2 || args == null)
                 {
                     throw new Exception("Wrong number of argumets.");
                 }
-                Number = int.Parse(args[0]);
-                Redix = int.Parse(args[1]);
-                if(Redix <=1 || Redix >= 21)
+
+                NumberForConvertation = int.Parse(args[0]);
+                RadixOfConvertation = int.Parse(args[1]);
+
+                if (RadixOfConvertation <= 1 || RadixOfConvertation >= 21)
                 {
-                    throw new Exception("Invalid redix.");
+                    throw new Exception("Invalid radix.");
                 }
-                ConvertFrom10ToAnyRedix.Converte(Number, Redix);
+
+                
+                string answer = a.Convertation(NumberForConvertation, RadixOfConvertation);
+                Console.WriteLine(answer);
+                Console.ReadKey();
             }
             catch (ArgumentException)
             {
@@ -28,7 +35,7 @@ namespace DEV3
             catch (Exception ex)
             {
                 Console.Write(ex.Message);
-            };
+            }
         }
     }
 }
