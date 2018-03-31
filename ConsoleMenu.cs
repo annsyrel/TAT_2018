@@ -49,10 +49,8 @@ namespace DEV_7
                     a.output_catalog();
                 }                    
             }
-            for (int i = 0; i < 15; i++)
-            {
-                Console.WriteLine("I'm CODE HEEEROOO!!! ");
-            }
+            Console.WriteLine("Thank you!!! ");
+            
         }        
      }
     
