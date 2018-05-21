@@ -1,29 +1,39 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace Task_2
+
+
+namespace task_4
 {
-    class EntryPoint
+    class Program
     {
         static void Main(string[] args)
         {
-            try
+            bool key = false;
+            List<People> persons = new List<People>();
+            People person = new People();
+            while (!key)
             {
-                try
+                Console.WriteLine("Do U want to add person? ");
+                if (Console.ReadLine() != "no")
                 {
-                    double lenght = Convert.ToDouble(args[0]), width = Convert.ToDouble(args[1]);
-                    Console.WriteLine(value: "Square of a rectangle: " + (lenght * width));
+                    People man = new People();
+                    man.people();
+                    persons.Add(man);
                 }
-                catch (FormatException)
+                else
                 {
-                    Console.WriteLine("Enter right numbers");
+                    key = true;
                 }
             }
-            catch (IndexOutOfRangeException)
-            {
-                Console.WriteLine("Enter lenght and width.");
-            }
-            Console.ReadKey();
-
+            person.Output(persons);
+            AgeCounter age = new AgeCounter();
+            age.MiddleAge(persons);
+            age.SeniorAge(persons);
+            age.YoungerAge(persons);
         }
     }
 }
+
+
+    
